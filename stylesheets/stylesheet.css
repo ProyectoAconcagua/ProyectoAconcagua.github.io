@@ -66,14 +66,14 @@ a:hover {
 header {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Playfair Display SC', serif, Arial, serif; 
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
 
 header h1 {
   letter-spacing: -1px;
-  font-size: 72px;
+  font-size: 68px;
   color: #fff;
   line-height: 1;
   margin-bottom: 0.2em;
@@ -82,17 +82,28 @@ header h1 {
 
 header h2 {
   font-size: 26px;
+  font-family: Arial, serif;
   color: #9ddcff;
   font-weight: normal;
   line-height: 1.3;
-  width: 540px;
+  width: 740px;
   letter-spacing: 0;
 }
 
 .inner {
   position: relative;
   width: 940px;
+  padding-left: 400px;
   margin: 0 auto;
+}
+
+.logo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 200px;
+  background: transparent url(../images/logo.png) 0 0 no-repeat no-repeat;
+  background-size: contain;
 }
 
 #content-wrapper {
@@ -144,7 +155,7 @@ a.button small {
 }
 header a.button {
   position: absolute;
-  right: 0;
+  right: 10%;
   top: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
