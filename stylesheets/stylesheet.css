@@ -93,7 +93,7 @@ header h2 {
 .inner {
   position: relative;
   width: 940px;
-  padding-left: 400px;
+  padding-left: 300px;
   margin: 0 auto;
 }
 
@@ -101,7 +101,7 @@ header h2 {
   position: absolute;
   width: 200px;
   height: 200px;
-  left: 200px;
+  left: 150px;
   background: transparent url(../images/logo.png) 0 0 no-repeat no-repeat;
   background-size: contain;
 }
@@ -112,7 +112,7 @@ header h2 {
 }
 
 #main-content {
-  width: 690px;
+  width: 600px;
   float: left;
 }
 
@@ -128,6 +128,15 @@ aside#sidebar {
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
   font-size: 12px;
   line-height: 1.3;
+}
+
+aside#sidebar h3 {
+    font-family: 'architects daughter', 'helvetica neue', helvetica, arial, serif; 
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #474747;
 }
 
 aside#sidebar p.repo-owner,
@@ -167,6 +176,20 @@ aside a.button {
   margin-bottom: 20px;
   font-size: 21px;
 }
+
+#main-content a.button {
+  width: 50px;
+  height: 36px;
+  padding-left: 38px;
+  padding-right: 48px;
+  padding-top: 10px;
+  display: inline-block;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  background-size: contain;
+  margin-bottom: 60px;
+  font-size: 14px;
+}
+
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -264,7 +287,7 @@ form {
 }
 
 #main-content h3 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'architects daughter', 'helvetica neue', helvetica, arial, serif; 
   font-size: 18px;
   font-weight: bold;
   margin-top: 24px;
@@ -287,10 +310,10 @@ form {
 } 
 
 h4:before {
-  content: "////";
+  content: "+";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -2.8em;
+  margin-left: -1.8em;
 }
 
 #main-content h5 {
@@ -352,7 +375,7 @@ dl dd {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: transparent url('../images/footer-bg.jpg') 0 0 repeat-x;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -366,6 +389,24 @@ footer a {
 footer a:hover {
   color: #444;
 }
+
+footer .followus{
+    position: relative;
+    height: 130px;
+    display: block;
+}
+
+
+footer a.twitter {
+  position: initial;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-left: 200px;
+  background: transparent url(../images/twitter.png) 0 0 no-repeat;
+  background-size: contain;
+}
+
 
 /* MISC */
 .clearfix:after {
@@ -471,6 +512,8 @@ footer a:hover {
   aside#sidebar a.button {
     display: none;
   }
+
+
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
