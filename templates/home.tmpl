@@ -1,0 +1,18 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+<%block name="all_content">
+    <%block name="github_ribbon">
+    <!-- Github ForkMe Ribbon -->
+    <a href="https://github.com/waartaa/waartaa"><img style="position: absolute; top: 50px; right: 0; border: 0; z-index: 999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+    <!-- Github ForkMe Ribbon End -->
+    </%block>
+    <!-- Content -->
+      <div class="container main-content">
+        <div class="row">
+          ${post.text()}
+        </div>
+      </div>
+      <footer class="bs-footer" role="contentinfo">
+          ${content_footer}
+      </footer>
+</%block>
