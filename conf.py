@@ -94,7 +94,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # (the same way you would do with a (translatable) setting.)
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/features.html", "Features"),
+        ("/modulos.html", "Modulos"),
         ("/events.html", "Eventos"),
         ("/blog/", "Blog"),
         ("/categories/index.html", "Tags"),
@@ -235,11 +235,11 @@ LOGO_URL = '/assets/css/images/logo32.png'
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
-#TAG_PAGES_ARE_INDEXES = True
+TAG_PAGES_ARE_INDEXES = True
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-#INDEX_PATH = "blog"
+INDEX_PATH = "blog"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -249,8 +249,8 @@ LOGO_URL = '/assets/css/images/logo32.png'
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
-#ARCHIVE_PATH = ""
-#ARCHIVE_FILENAME = "archive.html"
+ARCHIVE_PATH = ""
+ARCHIVE_FILENAME = "archive.html"
 
 # URLs to other posts/pages can take 3 forms:
 # rel_path: a relative URL to the current page/post (default)
@@ -267,7 +267,7 @@ RSS_PATH = ""
 
 # Slug the Tag URL easier for users to type, special characters are
 # often removed or replaced as well.
-# SLUG_TAG_PATH = True
+SLUG_TAG_PATH = True
 
 # A list of redirection tuples, [("foo/from.html", "/bar/to.html")].
 #
@@ -716,7 +716,7 @@ TWITTER_CARD = {
 }
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
-#USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]

@@ -1,0 +1,181 @@
+#navbar-try-btn {
+  background-color: rgb(64, 86, 141);
+  padding: 4px 18px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-right: 0;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+h1, h2, h3, h4 {
+  color: #4A4355;
+}
+
+.main-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#navbar-try-btn:hover {
+  color: #ffffff;
+}
+
+.no-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+  margin-bottom: 0em !important;
+}
+
+/* Bootstrap CSS */
+.navbar-inner {
+    /*background-color: #330709 !important;*/
+    background-color: #eaeaea !important;
+    background-image: none !important;
+}
+
+body {
+    background-color: #F8F8F8 !important;
+}
+
+.global-navbar {
+  background-color: #2F4279;
+}
+
+.global-navbar {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.global-navbar.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: #39326B;
+}
+
+.bs-sidebar .nav > .active > a, .bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #563d7c;
+  background-color: transparent;
+  border-right: 1px solid #563d7c;
+}
+
+.nav .nav {
+  padding-left: 10px;
+}
+
+#aconcagua-intro {
+  color: #4A4355;
+}
+
+#aconcagua-intro {
+  margin-top: 10px;
+}
+
+.aconcagua-banner {
+  /*font-family: 'Changa One';*/
+  font-weight: 900;
+  letter-spacing: -1px;
+  font-size: 50px;
+  color: #4A4355;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.aconcagua-subbanner {
+  text-align: center;
+  color: #938D9E;
+}
+
+.aconcagua-mission-logo-cloud {
+  font-size: 75px;
+  top: 20px;
+}
+
+.aconcagua-mission-logo-love {
+  font-size: 70px;
+  top: 13px;
+}
+
+.aconcagua-mission-logo-irc {
+  font-size: 58px;
+}
+
+.aconcagua-banner-img-container {
+  overflow: hidden;
+}
+
+.aconcagua-banner-img {
+  width: 114%;
+}
+
+.aconcagua-banner-main-content {
+  margin-bottom: 20px;
+}
+
+.aconcaguaversion {
+  color: #cfcfcf;
+}
+
+#aconcagua-try-btn {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+#aconcagua-intro .jumbotron {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mention-badge {
+  background-color: #428bca;
+}
+
+#social-btns {
+  text-align: center;
+  padding: 22px 0 17px;
+  text-align: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.bs-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 100px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-links {
+  margin-top: 20px;
+  padding-left: 0;
+  color: #999;
+}
+
+.footer-links li:first-child {
+  padding-left: 0;
+}
+
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+
