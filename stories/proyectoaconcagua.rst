@@ -66,7 +66,7 @@
       <p>Son m&oacute;dulos que adaptan Odoo/OpenERP a la normativa Argentina. Impuestos, comprobantes, cobros y pagos, gesti&oacute;n de chequeras y cheques, etc. Es una herramienta que permite la integraci&oacute;n de la contabilidad Argentina con Odoo.</p>
       <h1>&iquest;Qu&eacute; es Odoo/OpenERP&#63;</h1>
       <p>Es un sistema de ERP integrado de c&oacute;digo abierto. Se define como una alternativa de c&oacute;digo abierto frente a otros ERP comerciales. Posee una interfaz sencilla y amigable al usuario y es totalmente adaptable.</p>
-      <p><a id="aconcagua-read-more-btn" role="button" href="/modules.html" class="btn btn-primary btn-lg">Leer m&aacute;s</a></p>
+      <p><a id="aconcagua-read-more-btn" role="button" href="/modulos.html" class="btn btn-primary btn-lg">Leer m&aacute;s</a></p>
     </div>
 
       <!-- Banner large button end -->
