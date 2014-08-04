@@ -95,7 +95,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/modulos.html", "Modulos"),
-        ("/events.html", "Eventos"),
+        #("/events.html", "Eventos"),
         ("/blog/", "Blog"),
         ("/categories/index.html", "Tags"),
         ("/rss.xml", "feed RSS"),
