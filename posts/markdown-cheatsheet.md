@@ -2,7 +2,7 @@
 .. title: Markdown Cheatsheet
 .. slug: markdown-cheatsheet
 .. date: 2014-07-02 21:38:06 UTC-03:00
-.. tags: 
+.. tags: draft
 .. link: 
 .. description: 
 .. type: text
