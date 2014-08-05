@@ -1,0 +1,37 @@
+## -*- coding: utf-8 -*-
+<%namespace name="helper" file="index_helper.tmpl"/>
+<%namespace name="comments" file="comments_helper.tmpl"/>
+<%inherit file="base.tmpl"/>
+<%block name="content">
+    % for post in posts:
+        <div class="postbox row col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                    <h1><a href="${post.permalink()}">${post.title()}</a></h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="glyphicon glyphicon-calendar"></span> <time class="published" datetime="${post.date.isoformat()}">${post.formatted_date(date_format)}</time><br/>
+                    <span class="glyphicon"><img src="/assets/images/glyphicons_054_clock.png" style="width: 12px;"></span>
+                    <time class="published" datetime="${post.date.isoformat()}">${post.formatted_date("%H:%M")}</time>
+                    <br/>
+                    <div class="fb-like" data-href="${SITE_URL}${post.permalink()}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="${SITE_URL_WITHOUT_SLASH}${post.permalink()}" data-text="${post.title()} | ${SITE_URL}" data-lang="en">Tweet</a>
+                </div>
+                <div class="col-md-10">
+                    ${post.text(teaser_only=index_teasers)}
+                    % if not post.meta('nocomments'):
+                        ${comments.comment_link(post.permalink(), post.base_path)}
+                    % endif
+                </div>
+            </div>
+        </div>
+    % endfor
+    ${helper.html_pager()}
+    ${comments.comment_link_script()}
+    ${helper.mathjax_script(posts)}
+</%block>
+

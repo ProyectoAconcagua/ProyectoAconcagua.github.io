@@ -1,0 +1,40 @@
+## -*- coding: utf-8 -*-
+<%namespace name="helper" file="post_helper.tmpl"/>
+<%namespace name="custom_helper" file="post_custom_helper.tmpl"/>
+<%namespace name="comments" file="comments_helper.tmpl"/>
+<%inherit file="base.tmpl"/>
+<%block name="extra_head">
+${custom_helper.twitter_card_information(post)}
+% if post.meta('keywords'):
+    <meta name="keywords" content="${post.meta('keywords')|h}"/>
+% endif
+</%block>
+<%block name="content">
+    <div class="postbox col-md-10 col-md-offset-1">
+    ${custom_helper.html_title()}
+    <hr>
+    <small>
+        <span class="glyphicon glyphicon-calendar"></span> <time class="published" datetime="${post.date.isoformat()}">${post.formatted_date(date_format + " %H:%M")}</time>
+        ${custom_helper.html_translations(post)}
+        ${custom_helper.html_tags(post)}
+        % if not hide_sourcelink:
+            <%block name="sourcelink">
+            % if not post.meta('password'):
+                <a class="pull-right" href="${post.source_link()}" id="sourcelink">${messages("Source")}</a>
+            % endif
+            </%block>
+        %endif
+        <div class="pull-right">
+            <div class="fb-like" data-href="${SITE_URL_WITHOUT_SLASH}${post.permalink()}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="${SITE_URL_WITHOUT_SLASH}${post.permalink()}" data-lang="en">Tweet</a>
+        </div>
+    </small>
+    <hr>
+    ${post.text()}
+    ${custom_helper.html_pager(post)}
+    % if not post.meta('nocomments'):
+        ${comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path)}
+    % endif
+    ${custom_helper.mathjax_script(post)}
+    </div>
+</%block>

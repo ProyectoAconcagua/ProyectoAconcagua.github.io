@@ -284,7 +284,7 @@
                 <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_account_create_check_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
               </li>
               <li>
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_checkbook" data-lang="en" data-text="Gestión de chequeras #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_checkb" data-lang="en" data-text="Gestión de chequeras #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
               </li>
           </ul>
           </div>

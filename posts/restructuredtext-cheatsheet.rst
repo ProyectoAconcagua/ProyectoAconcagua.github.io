@@ -1,7 +1,7 @@
 .. title: restructuredText Cheatsheet
 .. slug: restructuredtext-cheatsheet
 .. date: 2014-07-02 21:38:50 UTC-03:00
-.. tags: 
+.. tags: draft
 .. link: 
 .. description: 
 .. type: text
@@ -15,7 +15,7 @@ A. upper-case letters
 
 Huebadsa
 
-<!-- TEASER_END -->
+.. TEASER_END
 
 a. lower-case letters
 
