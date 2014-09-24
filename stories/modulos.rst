@@ -356,17 +356,26 @@
       <div class="col-md-6" id="perception">
         <div><h1>Percepciones</h1></div><div class="lead">l10n_ar_perceptions_basic</div>
         <span style="float: right;">
-          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_perceptions_basic_v7/issues" target="new" class="btn btn-warning btn-sm disabled">Reportar Bug</a>
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_perceptions_basic_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
         </span>
         <ul class="nav nav-tabs" style="margin-bottom: 15px;">
           <li class="active"><a href="#mod8_desc" data-toggle="tab">Descripci&oacute;n</a></li>
-          <li class="disabled"><a>Capturas</a></li>
+          <li class=""><a href="#mod8_screenshot" data-toggle="tab">Capturas</a></li>
         </ul>
         <div id="perceptiontabcontent" class="tab-content">
           <div class="tab-pane fade active in" id="mod8_desc">
-            <h2>Proximamente</h2>
             <p>Módulo que agrega el concepto de percepciones a OpenERP/Odoo.</p>
-            <!--
+
+            <p>Agrega el concepto de <strong>Percepciones</strong> tal como se utilizan en <em>Argentina</em>, adaptándolo a la lógica de impuestos que <em>OpenERP/Odoo</em> tiene de base.</p>
+            <p>Permite cargar en forma manual las <em>percepiones aplicadas en las facturas de clientes y las percepciones sufridas en los cobros</em>, realizando las líneas contables correspondientes, según la configuración de las percepciones.</p>
+            <p>Características destacables:</p>
+            <ul>
+              <li><em>Adaptación</em> al sistema sin romper la lógica que trae de base.</li>
+              <li>Diferenciación entre percepciones a aplicadas y sufridas.</li>
+              <li>Extensión del módulo de <em>facturación</em> para agregar la carga de percepciones.</li>
+              <li>Menúes con las percepciones sufridas y aplicadas que facilita la generación de <em>informes.</li>
+              <li><em>Precarga de percepciones</em> comúnmente utilizadas, con la configuración de impuestos correspondiente que ayuda al usuario a cargar nuevas utilizando estas como modelo.</li>
+            </ul>
             <ul class="list-inline">
               <li>
                 <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_perceptions_basic_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
@@ -379,16 +388,18 @@
               </li>
           </ul>
           </div>
-          <!--
           <div class="tab-pane fade" id="mod8_screenshot">
             <div class="row" id="tabscreenshots">
               <div class="col-md-6" >
                 <h3>Capturas de pantalla</h3>
-                <p><a class="vat" href="/galleries/modulos/vat1.png" title="vat1">Tipo y número de documento en Partner</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception1.png" title="perception1">Percepciones aplicadas en factura</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception2.png" title="perception2">Vista impuestos en factura</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception3.png" title="perception3">Impuestos pre cargados por el módulo</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception4.png" title="perception4">Códigos de impuestos usados en percepciones</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception5.png" title="perception5">Vista de Percepciones Aplicadas</a></p>
               </div>
             </div>
           </div>
-          -->
         </div> 
       </div>
     </div> 
