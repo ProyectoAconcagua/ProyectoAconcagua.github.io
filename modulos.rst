@@ -1,0 +1,408 @@
+.. title: Modulos
+.. slug: modulos
+.. date: 2014-07-28 12:23:14 UTC-03:00
+.. tags: modulos
+.. link: 
+.. description: Proyecto Aconcagua - Modulos
+.. template: post_colorbox.tmpl
+
+
+.. raw:: html
+
+    <div class="section row" id="modules_row1"> 
+
+      <div class="col-md-6" id="point_of_sale">
+        <div><h1>Punto de Venta</h1></div><div class="lead">l10n_ar_point_of_sale</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_point_of_sale_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod1_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod1_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="postabcontent" class="tab-content" style="height: 400px;">
+          <div class="tab-pane fade active in" id="mod1_desc">
+            <p>El módulo de punto de venta introduce conceptos básicos de la contabilidad Argentina, tales como <strong>denominación, punto de venta, tipo de factura, tipo de comprobante, etc.</strong>.</p>
+            <p>Contiene la lógica necesaria para:</p>
+            <ul>
+              <li>Asignar la denominación correspondiente según las <em>posiciones fiscales</em></li>
+              <li>Calcular el número de comprobante según <em>tipo, denominación y punto de venta</em></li>
+              <li>Realizar <em>chequeos fiscales</em> previos a validar la factura, como por ejemplo, que coincidan la posición fiscal y la denominación del comprobante.</li>
+              <li>Incluir el concepto de notas de débito sin afectar demasiado el código de <em>OpenERP/Odoo</em></li>
+              <li>Posibilidad de agregar impuestos en forma manual a los comprobantes <em>Facturas, NC y ND</em></li>
+              <li>Chequeo de duplicado de factura</li>
+              <li>Chequeo de formato del número de factura</li>
+              <li>Solo realiza chequeos fiscales a comprobantes locales. Permite comprobantes con <em>Clientes/Proveedores</em> del exterior.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_point_of_sale_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_point_of_sale_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_pos" data-lang="en" data-text="Módulo de Punto de venta para #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod1_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="pos" href="/galleries/modulos/pos1.png" title="Pos1">Configuración de puntos de venta</a></p>
+                <p><a class="pos" href="/galleries/modulos/pos2.png" title="Pos2">Comprobantes con denominación, punto de venta y número</a></p>
+                <p><a class="pos" href="/galleries/modulos/pos3.png" title="Pos3">Configuración de Denominaciones</a></p>
+                <p><a class="pos" href="/galleries/modulos/pos4.png" title="Pos4">Configuración de Posiciones Fiscales</a></p>
+              </div>
+              <div class="col-md-6" >
+                <h3>Videotutoriales</h3>
+                <p><a class='youtube' href="https://www.youtube.com/embed/lojiQP9nyIw?rel=0&amp;wmode=transparent">Denominaciones, Posición Fiscal y Puntos de Venta</a></p>
+                <p><a class='youtube' href="https://www.youtube.com/embed/xa1Ie8-dQ9c?rel=0&amp;wmode=transparent">Creación de Clientes</a></p>
+                <p><a class='youtube' href="https://www.youtube.com/embed/4ROxsEAl8_U?rel=0&amp;wmode=transparent">Creación de Proveedores</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+
+      <div class="col-md-6" id="payment">
+        <div><h1>Cobros y pagos</h1></div><div class="lead">l10n_ar_account_payment</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_account_payment_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod2_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod2_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="paytabcontent" class="tab-content">
+          <div class="tab-pane fade active in" id="mod2_desc">
+            <p>El módulo de cobros y pagos extiende el módulo <strong>account_voucher</strong> para agregarle <em>varias formas de cobros/pagos</em>. Soporta multimoneda.</p>
+            <p>Además, agrega varios <em>hooks</em> para extender la funcionalidad en los comprobantes de cobros y pagos, por lo tanto, sirve de base para los módulos de cheques y retenciones.</p>
+            <p>Contiene la lógica necesaria para:</p>
+            <ul>
+              <li>Configurar distintas formas de cobro y de pago por separado.</li>
+              <li>Asignar una cuenta contable a cada forma de cobro/pago.</li>
+              <li>Incluir de forma automática las formas de cobro/pago según sea para cobro o pago y tipo de moneda.</li>
+              <li>Crear asientos contables correspondientes según la configuración efectuada.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_account_payment_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_account_payment_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_pay" data-lang="en" data-text="Módulo de Cobros y pagos para #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod2_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="pay" href="/galleries/modulos/pay1.png" title="pay1">Configuración de modos de cobro/pago</a></p>
+                <p><a class="pay" href="/galleries/modulos/pay2.png" title="pay2">Cobro realizado a un cliente</a></p>
+                <p><a class="pay" href="/galleries/modulos/pay3.png" title="pay3">Pago realizado a un proveedor</a></p>
+              </div>
+              <div class="col-md-6" >
+                <h3>Videotutoriales</h3>
+                <p><a class='youtube' href="https://www.youtube.com/embed/6eYTi9ZoNRA?rel=0&amp;wmode=transparent">Configuración de Modo de Pagos y Cobros</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+    </div> 
+    <div class="section row" id="modules_row2"> 
+      <div class="col-md-6" id="chart">
+        <div><h1>Plan de cuentas básico Argentina</h1></div><div class="lead">l10n_ar_chart_of_account</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_chart_of_account_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod3_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod3_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="charttabcontent" class="tab-content">
+          <div class="tab-pane fade active in" id="mod3_desc">
+            <p>Este módulo carga en el sistema las plantillas correspondientes a <em>cuentas contables, impuestos y códigos de impuestos</em> para un <strong>Plan de Cuentas</strong> de uso básico en Argentina.</p>
+            <p>Luego de instalarlo, se lanza un wizard en el que se puede seleccionar estas plantillas de plan de cuentas para configurar el sistema.</p>
+            <p>Posee plantillas para:</p>
+            <ul>
+              <li>Cuentas contables, ya configuradas para el uso en el sistema.</li>
+              <li>Impuestos.</li>
+              <li>Códigos de Impuestos, con la estructura en árbol correspondiente, preparada para generar fácilmente la declaración de Impuestos.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_chart_of_account_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_chart_of_account_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_chart" data-lang="en" data-text="Plan de cuentas básico Argentina #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod3_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="chart" href="/galleries/modulos/chart1.png" title="chart1">Plantilla del Plan de Cuentas</a></p>
+                <p><a class="chart" href="/galleries/modulos/chart2.png" title="chart2">Plantilla de cuentas</a></p>
+                <p><a class="chart" href="/galleries/modulos/chart3.png" title="chart3">Plantilla de impuestos</a></p>
+                <p><a class="chart" href="/galleries/modulos/chart4.png" title="chart4">Plantilla de códigos de impuestos</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-6" id="vat">
+        <div><h1>Chequeo de CUIT/CUIL</h1></div><div class="lead">base_vat_ar</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/base_vat_ar_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod4_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod4_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="vattabcontent" class="tab-content">
+          <div class="tab-pane fade active in" id="mod4_desc">
+            <p>Este módulo agrega la lógica de chequeo de <strong>CUIT/CUIL para Argentina</strong>, extendiéndo el módulo <em>base_vat</em> que viene con <em>OpenERP/Odoo</em>.</p>
+            <p>Cambia la lógica que utiliza de base el sistema para elegir la función de chequeo. Al instalar este módulo ya no es necesario agregar el código de país delante del número de <strong>CUIT/CUIL</strong>, sino que se utiliza el <em>país del cliente/proveedor</em> para saber a qué país pertenece.</p>
+            <p>Características destacables:</p>
+            <ul>
+              <li>Algoritmo de chequeo de CUIT/CUIL.</li>
+              <li>Cambio de lógica para detectar el país para el cual chequear, no hay necesidad de agregar AR o cualquier otro código de país delante del número.</li>
+              <li>Se agregan tipos de documentos y se precargan. Como ser <em>CUIT, CUIL, DNI, CI, LE, etc.</em></li>
+              <li>Sobre cada <em>tipo de documento</em> se puede configurar si se debe realizar o no el chequeo.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=base_vat_ar_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=base_vat_ar_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_vat" data-lang="en" data-text="Módulo de chequeo de CUIT/CUIL #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod4_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="vat" href="/galleries/modulos/vat1.png" title="vat1">Tipo y número de documento en Partner</a></p>
+                <p><a class="vat" href="/galleries/modulos/vat2.png" title="vat2">Tipos de documento</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> 
+
+    <div class="section row" id="modules_row3"> 
+      <div class="col-md-6" id="check">
+        <div><h1>Gestión de Cheques</h1></div><div class="lead">l10n_ar_account_check</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_account_check_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod5_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod5_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="checktabcontent" class="tab-content">
+          <div class="tab-pane fade active in" id="mod5_desc">
+            <p>Este módulo gestiona <strong>cheques propios y de terceros</strong>. Hereda del módulo de <strong>Cobros y Pagos</strong> para agregar a los recibos la posibilidad de cargar cheques de terceros recibidos y a las <em>ordenes de pago</em> asignar cheques propios o de terceros ya cargados en el sistema.</p>
+            <p>Posee varias <em>vistas de calendario</em> por diferentes fechas, de modo que se pueda tener un panorama de cuando depositar un cheque, o cuando un Proveedor puede llegar a depositar un cheque propio.</p>
+            <p>Características principales:</p>
+            <ul>
+              <li>Adaptación al módulo de <em>cobros y pagos</em> de forma que los cheques que se incluyan en el comprobante, suman al total del cobro/pago.</li>
+              <li>Manejo de <em>estados de cheques</em> de tercero <strong>(En cartera, depositado, entregado, rechazado)</strong>.</li>
+              <li>Vistas de calendario con información temporal de los cheques.</li>
+              <li>Generación de las líneas del asiento contable en el <em>Recibo/Orden de Pago</em> correspondiente a la configuración.</li>
+              <li><em>Wizard de depósito</em> que genera el asiento contable correspondiente.</li>
+              <li><em>Wizard de rechaz</em>o de cheque con generación automática de <strong>nota de débito</strong> por el monto del cheque más gastos bancarios.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_account_check_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_account_check_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_check" data-lang="en" data-text="Gestión de cheques en #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod5_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="check" href="/galleries/modulos/check1.png" title="check1">Menú Tesorería</a></p>
+                <p><a class="check" href="/galleries/modulos/check2.png" title="check2">Vista de calendario</a></p>
+                <p><a class="check" href="/galleries/modulos/check3.png" title="check3">Cheques en Recibos</a></p>
+                <p><a class="check" href="/galleries/modulos/check4.png" title="check4">Cheques propios y de terceros en ordenes de pago</a></p>
+                <p><a class="check" href="/galleries/modulos/check5.png" title="check5">Acciones sobre cheques de terceros</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-6" id="checkbook">
+        <div><h1>Gestión de chequeras</h1></div><div class="lead">l10n_ar_account_create_check</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_account_create_check_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod6_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod6_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="checkbooktabcontent" class="tab-content">
+          <div class="tab-pane fade active in" id="mod6_desc">
+            <p>Este módulo agrega una <strong>gestión de chequeras</strong> para los <em>cheques propios</em> que se adapta al módulo de cobros y pagos y el de gestión de cheques para su uso normal.</p>
+            <p>Permite una <em>carga más rápida</em> de los cheques propios en ordenes de pago, ya que, solo debe ingresarse el número de cheque y si está disponible en alguna de las chequeras, se cargan los datos ya configurados en la misma.</p>
+            <p>Características destacables:</p>
+            <ul>
+              <li><em>Wizard de creación de chequeras</em> asociadas a una cuenta bancaria.</li>
+              <li>Carga rápida en órdenes de pago.</li>
+              <li>Gestión de las chequeras, sabiendo qué cheques están disponibles en cada chequera y cuál fue el destino de los cheques ya emitidos.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_account_create_check_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_account_create_check_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_checkb" data-lang="en" data-text="Gestión de chequeras #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod6_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="checkbook" href="/galleries/modulos/checkbook1.png" title="checkbook1">Chequeras</a></p>
+                <p><a class="checkbook" href="/galleries/modulos/checkbook2.png" title="checkbook2">Wizard de creación de chequeras</a></p>
+                <p><a class="checkbook" href="/galleries/modulos/checkbook3.png" title="checkbook3">Vista formulario de chequeras</a></p>
+                <p><a class="checkbook" href="/galleries/modulos/checkbook4.png" title="checkbook4">Carga rápida en órdenes de pago</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> 
+
+    <div class="section row" id="modules_row4"> 
+      <div class="col-md-6" id="retention">
+        <div><h1>Retenciones</h1></div><div class="lead">l10n_ar_retentions_basic</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_retentions_basic_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod7_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod7_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="retentiontabcontent" class="tab-content">
+          <div class="tab-pane fade active in" id="mod7_desc">
+            <p>Agrega el concepto de <strong>Retenciones</strong> tal como se utilizan en <em>Argentina</em>, adaptándolo a la lógica de impuestos que <em>OpenERP/Odoo</em> tiene de base.</p>
+            <p>Permite cargar en forma manual las <em>retenciones aplicadas en los pagos y las retenciones sufridas en los cobros</em>, realizando las líneas contables correspondientes, según la configuración de las retenciones.</p>
+            <p>Características destacables:</p>
+            <ul>
+              <li><em>Adaptación</em> al sistema sin romper la lógica que trae de base.</li>
+              <li>Diferenciación entre retenciones a aplicadas y sufridas.</li>
+              <li>Extensión del módulo de <em>cobros y pagos</em> para agregar la carga de retenciones.</li>
+              <li>Menúes con las retenciones sufridas y aplicadas que facilita la generación de <em>informes de retenciones</em>.</li>
+              <li><em>Precarga de retenciones</em> comúnmente utilizadas, con la configuración de impuestos correspondiente que ayuda al usuario a cargar nuevas retenciones utilizando estas como modelo.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_retentions_basic_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_retentions_basic_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_retention" data-lang="en" data-text="Módulo de Retenciones Argentina #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod7_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="retention" href="/galleries/modulos/retention1.png" title="retention1">Configuración de retenciones</a></p>
+                <p><a class="retention" href="/galleries/modulos/retention2.png" title="retention2">Vista formulario de retenciones</a></p>
+                <p><a class="retention" href="/galleries/modulos/retention3.png" title="retention3">Configuración de impuestos por retención</a></p>
+                <p><a class="retention" href="/galleries/modulos/retention4.png" title="retention4">Impuestos pre cargados por el módulo</a></p>
+                <p><a class="retention" href="/galleries/modulos/retention5.png" title="retention5">Retenciones sufridas en recibo</a></p>
+                <p><a class="retention" href="/galleries/modulos/retention6.png" title="retention6">Vista de retenciones sufridas</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-6" id="perception">
+        <div><h1>Percepciones</h1></div><div class="lead">l10n_ar_perceptions_basic</div>
+        <span style="float: right;">
+          <a type="button" href="https://github.com/ProyectoAconcagua/l10n_ar_perceptions_basic_v7/issues" target="new" class="btn btn-warning btn-sm">Reportar Bug</a>
+        </span>
+        <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+          <li class="active"><a href="#mod8_desc" data-toggle="tab">Descripci&oacute;n</a></li>
+          <li class=""><a href="#mod8_screenshot" data-toggle="tab">Capturas</a></li>
+        </ul>
+        <div id="perceptiontabcontent" class="tab-content">
+          <div class="tab-pane fade active in" id="mod8_desc">
+            <p>Módulo que agrega el concepto de percepciones a OpenERP/Odoo.</p>
+
+            <p>Agrega el concepto de <strong>Percepciones</strong> tal como se utilizan en <em>Argentina</em>, adaptándolo a la lógica de impuestos que <em>OpenERP/Odoo</em> tiene de base.</p>
+            <p>Permite cargar en forma manual las <em>percepiones aplicadas en las facturas de clientes y las percepciones sufridas en los cobros</em>, realizando las líneas contables correspondientes, según la configuración de las percepciones.</p>
+            <p>Características destacables:</p>
+            <ul>
+              <li><em>Adaptación</em> al sistema sin romper la lógica que trae de base.</li>
+              <li>Diferenciación entre percepciones a aplicadas y sufridas.</li>
+              <li>Extensión del módulo de <em>facturación</em> para agregar la carga de percepciones.</li>
+              <li>Menúes con las percepciones sufridas y aplicadas que facilita la generación de <em>informes.</li>
+              <li><em>Precarga de percepciones</em> comúnmente utilizadas, con la configuración de impuestos correspondiente que ayuda al usuario a cargar nuevas utilizando estas como modelo.</li>
+            </ul>
+            <ul class="list-inline">
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_perceptions_basic_v7&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="http://www.ghbtns.com/github-btn.html?user=ProyectoAconcagua&repo=l10n_ar_perceptions_basic_v7&type=fork&count=true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/aconcag_perception" data-lang="en" data-text="Módulo de Percepciones #Odoo #OpenERP #ProyectoAconcagua">Tweet</a>
+              </li>
+          </ul>
+          </div>
+          <div class="tab-pane fade" id="mod8_screenshot">
+            <div class="row" id="tabscreenshots">
+              <div class="col-md-6" >
+                <h3>Capturas de pantalla</h3>
+                <p><a class="perception" href="/galleries/modulos/perception1.png" title="perception1">Percepciones aplicadas en factura</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception2.png" title="perception2">Vista impuestos en factura</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception3.png" title="perception3">Impuestos pre cargados por el módulo</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception4.png" title="perception4">Códigos de impuestos usados en percepciones</a></p>
+                <p><a class="perception" href="/galleries/modulos/perception5.png" title="perception5">Vista de Percepciones Aplicadas</a></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> 
+
+   </div>
+

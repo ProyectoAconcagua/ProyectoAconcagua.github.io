@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <sitemap>
+  <loc>http://www.proyectoaconcagua.com.ar/categories/noticias.xml</loc>
+  <lastmod>2014-09-25</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.proyectoaconcagua.com.ar/categories/sitio.xml</loc>
+  <lastmod>2014-09-25</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.proyectoaconcagua.com.ar/galleries/aconcagua/rss.xml</loc>
+  <lastmod>2014-09-25</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.proyectoaconcagua.com.ar/galleries/modulos/rss.xml</loc>
+  <lastmod>2014-09-25</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.proyectoaconcagua.com.ar/galleries/rss.xml</loc>
+  <lastmod>2014-09-25</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.proyectoaconcagua.com.ar/rss.xml</loc>
+  <lastmod>2014-09-25</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.proyectoaconcagua.com.ar/sitemap.xml</loc>
+  <lastmod>2014-09-25</lastmod>
+ </sitemap>
+</sitemapindex>
