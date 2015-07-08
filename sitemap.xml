@@ -6,54 +6,70 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/2014/index.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
+ </url>
+ <url>
+  <loc>http://www.proyectoaconcagua.com.ar/2015/index.html</loc>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/archive.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/blog/bienvenidos-a-proyecto-aconcagua.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/blog/index.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-07</lastmod>
+ </url>
+ <url>
+  <loc>http://www.proyectoaconcagua.com.ar/blog/novedades-en-ocal10n-argentina-y-proyecto-aconcagua.html</loc>
+  <lastmod>2015-07-07</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/categories/index.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
+ </url>
+ <url>
+  <loc>http://www.proyectoaconcagua.com.ar/categories/l10n-argentina.html</loc>
+  <lastmod>2015-07-07</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/categories/noticias.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-07</lastmod>
+ </url>
+ <url>
+  <loc>http://www.proyectoaconcagua.com.ar/categories/oca.html</loc>
+  <lastmod>2015-07-07</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/categories/sitio.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/galleries/aconcagua/index.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/galleries/index.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/galleries/modulos/index.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/index.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/modulos.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
  <url>
   <loc>http://www.proyectoaconcagua.com.ar/stories/events.html</loc>
-  <lastmod>2014-09-25</lastmod>
+  <lastmod>2015-07-06</lastmod>
  </url>
 </urlset>
